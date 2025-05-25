@@ -54,8 +54,14 @@ Entry point for the Node.js server.
 ## code/routes/
 Folder for Express route handlers.
 
+## code/routes/recommendation.js
+Express route for handling POST requests to /api/recommendation. Forwards user preferences to the controller and returns AI-generated recommendations.
+
 ## code/controllers/
 Folder for route controllers that handle the business logic of the application.
+
+## code/controllers/recommendationController.js
+Controller for the recommendation route. Validates input, builds prompt, calls OpenAI API, and formats/parses the AI response.
 
 ## code/models/
 Folder for database models and schemas.
@@ -69,6 +75,9 @@ Folder for static assets like images, fonts, and other files served directly by 
 ## code/config/
 Folder for configuration files and environment variables.
 
+## code/config/openai.js
+OpenAI API configuration and helper function for generating beverage recommendations. Exports a function to call OpenAI with user preferences and return formatted results.
+
 ## code/tests/
 Folder for test files and testing utilities.
 
@@ -79,10 +88,19 @@ Folder for custom scripts, such as database seeding or migration scripts.
 Folder for additional documentation, if needed.
 
 ## code/src/pages/RecommendationPage.js
-React page for the AI beverage recommendation feature. Contains the user input form for favorite alcoholic beverages and NA beverage type selection, with validation and accessibility support.
+React page for the AI beverage recommendation feature. Contains the user input form for favorite alcoholic beverages and NA beverage type selection, with validation and accessibility support. Now includes ARIA roles and tabIndex for accessibility.
 
 ## code/src/components/FormInput.js
-Reusable, accessible input component for forms. Renders label, input, and error message with ARIA attributes for accessibility.
+Reusable, accessible input component for forms. Renders label, input, and error message with ARIA attributes for accessibility. Now includes tabIndex for keyboard navigation.
+
+## code/src/components/RecommendationCard.js
+Reusable card component for each recommendation. Renders drink details, image, and links with accessible markup. Now includes ARIA roles, tabIndex, and improved keyboard/screen reader support.
+
+## code/src/locales/en.json
+Store all UI strings for English localization.
+
+## code/src/i18n.js
+i18n initialization and configuration for react-i18next, loading en.json.
 
 
 

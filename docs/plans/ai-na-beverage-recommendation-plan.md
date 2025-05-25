@@ -21,7 +21,7 @@
       ```
   - **Dependencies**: React, basic form validation library (optional)
 
-- [ ] Step 2: Integrate AI Recommendation Engine
+- [x] Step 2: Integrate AI Recommendation Engine
   - **Task**: Connect frontend to backend endpoint that calls OpenAI API with user preferences.
   - **Files**:
     - `code/src/pages/RecommendationPage.js`: Add API call logic on form submit.
@@ -58,7 +58,7 @@
       ```
   - **Dependencies**: Express, OpenAI SDK
 
-- [ ] Step 3: Display Recommendations
+- [x] Step 3: Display Recommendations
   - **Task**: Show AI-generated NA beverage recommendations with all required info in an accessible, responsive UI.
   - **Files**:
     - `code/src/pages/RecommendationPage.js`: Render recommendations list.
@@ -78,7 +78,7 @@
       ```
   - **Dependencies**: None beyond React
 
-- [ ] Step 4: Localization Support
+- [x] Step 4: Localization Support
   - **Task**: Ensure all user-facing strings are in English and ready for future localization.
   - **Files**:
     - `code/src/locales/en.json`: Store all UI strings.
@@ -99,7 +99,7 @@
       ```
   - **Dependencies**: i18n library (e.g., react-i18next) if not already present
 
-- [ ] Step 5: Accessibility Enhancements
+- [x] Step 5: Accessibility Enhancements
   - **Task**: Ensure all UI is keyboard navigable and screen reader friendly.
   - **Files**:
     - `code/src/components/FormInput.js`, `code/src/components/RecommendationCard.js`, `code/src/pages/RecommendationPage.js`: Add ARIA attributes, roles, and keyboard handlers as needed.
@@ -111,7 +111,7 @@
       ```
   - **Dependencies**: None
 
-- [ ] Step 6: Performance Optimization
+- [x] Step 6: Performance Optimization
   - **Task**: Ensure recommendations are generated and displayed within 5 seconds.
   - **Files**:
     - `code/controllers/recommendationController.js`: Add timeout logic for OpenAI API calls.
@@ -130,7 +130,7 @@
       ```
   - **Dependencies**: None
 
-- [ ] Step 7: Build and Run the App
+- [x] Step 7: Build and Run the App
   - **Task**: Build frontend and backend, then run locally.
   - **Files**: N/A (use existing scripts)
   - **Dependencies**: Node.js, npm/yarn
