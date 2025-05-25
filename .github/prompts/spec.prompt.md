@@ -34,5 +34,5 @@ FINALLY:
 
 When satisfied:
 
-- Output your plan in [folder](../../docs/specs/feature-name.md)
+- Output your plan in [file](../../docs/specs/ai-na-beverage-recommendation.md)
 - DO NOT start writing any code or implementation plans. Follow instructions.
