@@ -1,0 +1,16 @@
+{
+  "form.title": "Find Your Non-Alcoholic Drink Match",
+  "form.submit": "Get Recommendations",
+  "form.alcoholicFavorites": "Your Favorite Alcoholic Beverages",
+  "form.naBeverageTypes": "Preferred NA Beverage Types",
+  "form.required": "Required",
+  "form.selectAtLeastOne": "Select at least one type",
+  "form.loading": "Loading...",
+  "form.error": "Sorry, there was a problem getting recommendations.",
+  "recommendations.title": "Recommendations",
+  "recommendation.type": "Type",
+  "recommendation.ingredients": "Ingredients",
+  "recommendation.calories": "Calories",
+  "recommendation.healthInfo": "Health Info",
+  "recommendation.buyLink": "Buy or Learn More"
+}
