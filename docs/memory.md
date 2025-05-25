@@ -78,6 +78,12 @@ Folder for custom scripts, such as database seeding or migration scripts.
 ## code/docs/
 Folder for additional documentation, if needed.
 
+## code/src/pages/RecommendationPage.js
+React page for the AI beverage recommendation feature. Contains the user input form for favorite alcoholic beverages and NA beverage type selection, with validation and accessibility support.
+
+## code/src/components/FormInput.js
+Reusable, accessible input component for forms. Renders label, input, and error message with ARIA attributes for accessibility.
+
 
 
 
