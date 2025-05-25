@@ -13,6 +13,7 @@ exports.getRecommendations = async (req, res) => {
       setTimeout(() => reject(new Error('Timeout')), TIMEOUT_MS)
     );
     const recommendationsPromise = getOpenAIRecommendations(alcoholicFavorites, beverageTypes);
+    // Ensure OpenAI API call has a timeout (e.g., 5 seconds) and returns an error if exceeded
     const recommendations = await Promise.race([recommendationsPromise, timeoutPromise]);
     res.json({ recommendations });
   } catch (error) {

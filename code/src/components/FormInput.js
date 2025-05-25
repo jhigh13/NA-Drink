@@ -17,6 +17,7 @@ const FormInput = ({ id, label, value, onChange, error, required }) => {
         aria-invalid={!!error}
         aria-describedby={error ? `${id}-error` : undefined}
         tabIndex={0}
+        aria-label={label}
       />
       {error && (
         <span id={`${id}-error`} role="alert" style={{ color: 'red' }}>

@@ -42,12 +42,14 @@ const RecommendationPage = () => {
     setLoading(true);
     setApiError(null);
     setRecommendations(null);
+    const timeoutId = setTimeout(() => setLoading(true), 1000);
     try {
       const res = await fetch('/api/recommendation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ alcoholicFavorites, beverageTypes }),
       });
+      clearTimeout(timeoutId);
       if (!res.ok) throw new Error('Failed to get recommendations');
       const data = await res.json();
       setRecommendations(data.recommendations);
